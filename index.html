@@ -66,6 +66,12 @@
       top: -24%;
     }
     #turnUp,#turnDown,#turnLeft,#turnRight {
+      display: block;
+      background-color: #ccc;
+      text-decoration: none;
+      color:black;
+      line-height: 200%;
+      box-shadow: 2px 2px 2px #666;
       font-weight: bold;
       font-size: 40px;
       font-family:'黑体';
@@ -99,10 +105,10 @@
 <button id="btn">开始游戏</button>
 <button id="stop">暂停</button>
 <div class="turndirect">
-  <button id="turnUp">↑</button>
-  <button id="turnDown">↓</button>
-  <button id="turnLeft">←</button>
-  <button id="turnRight">→</button>
+  <a href="javascript:;" id="turnUp">↑</a>
+  <a href="javascript:;" id="turnDown">↓</a>
+  <a href="javascript:;" id="turnLeft">←</a>
+  <a href="javascript:;" id="turnRight">→</a>
 </div>
 <script>
   //思路：
