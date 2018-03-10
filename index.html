@@ -375,11 +375,13 @@
   // 手指滑动
   var startX,startY,endX,endY,absX,absY;
         currentMap.addEventListener('touchstart',function(e){
+            e.preventDefault();
             var touches = e.targetTouches[0];
             startX = touches.clientX;
             startY = touches.clientY;
         })
         currentMap.addEventListener('touchend',function(e){
+            e.preventDefault();
             var touches = e.changedTouches[0];
             endX = touches.clientX;
             endY = touches.clientY;
